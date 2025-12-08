@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sirr du Nom Bazdjalin - Dâ-awatou Al-Barhoutiya</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #0c1e2c 0%, #1a3a5f 100%);
+            color: #f5f5f5;
+            min-height: 100vh;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            text-align: center;
+            padding: 30px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #c9a66b;
+            text-shadow: 0 0 10px rgba(201, 166, 107, 0.3);
+        }
+        
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #e9d7a8;
+        }
+        
+        .subtitle {
+            color: #b8c7d9;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+        
+        .hashtags {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-top: 15px;
+        }
+        
+        .hashtag {
+            background: rgba(201, 166, 107, 0.2);
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            color: #c9a66b;
+        }
+        
+        .content-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        
+        .password-section {
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 15px;
+            padding: 30px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(201, 166, 107, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .password-form {
+            max-width: 500px;
+            margin: 20px auto 0;
+        }
+        
+        .password-input {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        input {
+            flex: 1;
+            padding: 15px;
+            border: none;
+            border-radius: 10px;
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+            font-size: 1rem;
+            border: 1px solid rgba(201, 166, 107, 0.3);
+        }
+        
+        input:focus {
+            outline: none;
+            border-color: #c9a66b;
+            box-shadow: 0 0 10px rgba(201, 166, 107, 0.3);
+        }
+        
+        button {
+            padding: 15px 30px;
+            background: linear-gradient(to right, #c9a66b, #b89446);
+            color: #0c1e2c;
+            border: none;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+        
+        button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 7px 15px rgba(201, 166, 107, 0.4);
+        }
+        
+        .message {
+            margin-top: 15px;
+            padding: 10px;
+            border-radius: 8px;
+            font-weight: bold;
+            display: none;
+        }
+        
+        .error {
+            background: rgba(255, 0, 0, 0.2);
+            color: #ff8080;
+            border: 1px solid rgba(255, 0, 0, 0.3);
+        }
+        
+        .success {
+            background: rgba(0, 255, 0, 0.1);
+            color: #80ff80;
+            border: 1px solid rgba(0, 255, 0, 0.3);
+        }
+        
+        .ritual-content {
+            display: none;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 15px;
+            padding: 30px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(201, 166, 107, 0.2);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+        
+        .ritual-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        
+        .name-arabic {
+            font-size: 3rem;
+            color: #c9a66b;
+            text-align: right;
+            direction: rtl;
+        }
+        
+        .phonetic {
+            font-size: 1.8rem;
+            color: #e9d7a8;
+        }
+        
+        .image-container {
+            text-align: center;
+            margin: 30px 0;
+        }
+        
+        .ritual-image {
+            max-width: 100%;
+            border-radius: 10px;
+            border: 2px solid rgba(201, 166, 107, 0.3);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .steps {
+            margin: 30px 0;
+        }
+        
+        .step {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-left: 4px solid #c9a66b;
+        }
+        
+        .step-number {
+            display: inline-block;
+            background: #c9a66b;
+            color: #0c1e2c;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        
+        .step-title {
+            display: inline-block;
+            font-size: 1.2rem;
+            color: #e9d7a8;
+            margin-bottom: 10px;
+        }
+        
+        .contact-info {
+            background: rgba(201, 166, 107, 0.1);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 30px;
+            text-align: center;
+            border: 1px solid rgba(201, 166, 107, 0.3);
+        }
+        
+        .contact-title {
+            color: #c9a66b;
+            margin-bottom: 10px;
+            font-size: 1.3rem;
+        }
+        
+        .phone-number {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #e9d7a8;
+            margin: 15px 0;
+            letter-spacing: 2px;
+        }
+        
+        .testimony {
+            font-style: italic;
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 30px;
+            border-left: 4px solid #c9a66b;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: #b8c7d9;
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 1.6rem;
+            }
+            
+            .name-arabic {
+                font-size: 2.2rem;
+            }
+            
+            .phonetic {
+                font-size: 1.4rem;
+            }
+            
+            .password-section, .ritual-content {
+                padding: 20px;
+            }
+            
+            .password-input {
+                flex-direction: column;
+            }
+            
+            .ritual-header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 15px;
+            }
+            
+            .phone-number {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">
+                <i class="fas fa-star-and-crescent"></i>
+            </div>
+            <h1>Sirr du Nom Bazdjalin</h1>
+            <div class="subtitle">Dâ-awatou Al-Barhoutiya - Pilier central des asrâr rouhâniya</div>
+            <div class="hashtags">
+                <div class="hashtag">#Muslim_Walyy_Congo</div>
+                <div class="hashtag">#Dâ_awatou_Al_Barhoutiya</div>
+                <div class="hashtag">#Bazdjalin</div>
+            </div>
+        </header>
+        
+        <div class="content-wrapper">
+            <section class="password-section">
+                <h2>Accès au Rituel Sacré</h2>
+                <p>Pour accéder au sirr complet du nom Bazdjalin, veuillez entrer le mot de passe correct.</p>
+                
+                <div class="password-form">
+                    <div class="password-input">
+                        <input type="password" id="passwordInput" placeholder="Entrez le mot de passe">
+                    </div>
+                    <button id="submitPassword">Accéder au Rituel</button>
+                    <div id="message" class="message"></div>
+                </div>
+                
+                <div class="contact-info" style="margin-top: 30px;">
+                    <div class="contact-title">Pour tout contact :</div>
+                    <div class="phone-number">+235 66 03 29 14</div>
+                    <p>Muslim Walyy Congo depuis le Burkina</p>
+                </div>
+            </section>
+            
+            <section class="ritual-content" id="ritualContent">
+                <div class="ritual-header">
+                    <div>
+                        <div class="phonetic">Bazdjalin</div>
+                        <div class="subtitle">Sixième nom de la Dâ-awatou Al-Barhoutiya</div>
+                    </div>
+                    <div class="name-arabic">بزجل</div>
+                </div>
+                
+                <div class="image-container">
+                    <img src="https://i.postimg.cc/rwSbZ4pw/1765212759005.jpg" alt="Symbolisme spirituel" class="ritual-image">
+                    <p class="subtitle" style="margin-top: 10px;">Symboles sacrés de la Dâ-awatou Al-Barhoutiya</p>
+                </div>
+                
+                <p style="margin-bottom: 20px;">
+                    Ceci est un sirr du sixième nom de la Dâ-awatou Al-Barhoutiya. Pour tous ceux qui m'appellent surtout de l'extérieur, en Occident, ils savent que Muslim Walyy Congo, depuis le Burkina, travaille beaucoup plus avec la Dâ-awatou Al-Barhoutiya qu'avec tout autre sirr, car la Dâ-awatou Al-Barhoutiya est la source, le pilier central des asrâr rouhâniya.
+                </p>
+                
+                <p style="margin-bottom: 30px;">
+                    Si tu as n'importe quel problème ou besoin que tu souhaites qu'Allah t'aide à résoudre par la baraka de Son Nom Bazdjalin :
+                </p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-title">Préparation</div>
+                        <p>Cherche un seul kola rouge et l'encens Loubanou Zoukar.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-title">Lundi soir</div>
+                        <p>Après la prière d'‘Ichâ, allume l'encens, formule clairement ton besoin, puis pose le kola rouge devant toi.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-title">Dhikr</div>
+                        <p>Fais le dhikr du Nom Bazdjalin 7777 fois.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-title">Conclusion du premier jour</div>
+                        <p>À la fin, tu souffles sur le kola rouge, puis tu vas te coucher en laissant l'encens brûler et en gardant le kola rouge près de toi au moment de dormir.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-title">Répétition</div>
+                        <p>Tu refais exactement la même chose le mardi soir, puis le mercredi soir, toujours avec le même kola rouge.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">6</div>
+                        <div class="step-title">Rêve prophétique</div>
+                        <p>Le mercredi soir, par la permission d'Allah, il te viendra un homme dans ton rêve qui se présentera à toi, te donnera son nom, et t'annoncera un sacrifice à faire pour résoudre ton problème.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">7</div>
+                        <div class="step-title">Jeudi matin</div>
+                        <p>Le jeudi tôt le matin, tu prends ce même kola rouge et tu le jettes soit dans un puits, soit dans un fleuve, soit à la mer.</p>
+                    </div>
+                    
+                    <div class="step">
+                        <div class="step-number">8</div>
+                        <div class="step-title">Sacrifice</div>
+                        <p>Ensuite, tu accomplis le sacrifice qu'il t'a recommandé avant sept jours.</p>
+                    </div>
+                </div>
+                
+                <div class="testimony">
+                    <p>
+                        <i class="fas fa-quote-left" style="color: #c9a66b; margin-right: 10px;"></i>
+                        On dit que l'homme qui est venu à toi dans le rêve, lié au nom Bazdjalin, devient alors comme un walî rouhânî chargé de t'assister. Ainsi, chaque fois que tu as un besoin d'argent pressant, tu te mets dans un état de pureté, formules ton besoin, puis tu l'appelles 7 fois son nom qu'il va te donner en rêve, avec sincérité et confiance en Allah, et, par la permission d'Allah, tu verras des ouvertures dans ta subsistance.
+                        <i class="fas fa-quote-right" style="color: #c9a66b; margin-left: 10px;"></i>
+                    </p>
+                    <p style="margin-top: 15px; text-align: right; font-weight: bold;">
+                        - Muslim Walyy Congo
+                    </p>
+                </div>
+                
+                <div class="testimony">
+                    <p>
+                        <i class="fas fa-quote-left" style="color: #c9a66b; margin-right: 10px;"></i>
+                        J'ai pratiqué ce sirr en 2022 pour un monsieur en France qui avait un grand souci dans son travail. Fa wallahi, jusqu'à présent, il est reconnaissant envers Muslim Walyy Congo depuis le Burkina.
+                        <i class="fas fa-quote-right" style="color: #c9a66b; margin-left: 10px;"></i>
+                    </p>
+                </div>
+                
+                <div class="contact-info">
+                    <div class="contact-title">Pour guidance supplémentaire :</div>
+                    <div class="phone-number">+235 66 03 29 14</div>
+                    <p>Contactez Muslim Walyy Congo depuis le Burkina</p>
+                    <p style="margin-top: 15px; font-size: 0.9rem;">La Dâ-awatou Al-Barhoutiya est la source, le pilier central des asrâr rouhâniya.</p>
+                </div>
+            </section>
+        </div>
+        
+        <footer>
+            <p>© 2023 Dâ-awatou Al-Barhoutiya - Tous les droits sont réservés</p>
+            <p style="margin-top: 10px;">Salam alaykoum 🤝</p>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const passwordInput = document.getElementById('passwordInput');
+            const submitButton = document.getElementById('submitPassword');
+            const messageDiv = document.getElementById('message');
+            const ritualContent = document.getElementById('ritualContent');
+            const passwordSection = document.querySelector('.password-section');
+            
+            // Mot de passe correct
+            const correctPassword = "djinn235";
+            
+            submitButton.addEventListener('click', function() {
+                const enteredPassword = passwordInput.value.trim();
+                
+                // Effacer tout message précédent
+                messageDiv.style.display = 'none';
+                messageDiv.className = 'message';
+                
+                // Vérifier le mot de passe
+                if (enteredPassword === correctPassword) {
+                    // Mot de passe correct
+                    messageDiv.textContent = "Mot de passe correct ! Accès au rituel autorisé.";
+                    messageDiv.classList.add('success');
+                    messageDiv.style.display = 'block';
+                    
+                    // Afficher le contenu et masquer la section mot de passe
+                    setTimeout(function() {
+                        passwordSection.style.display = 'none';
+                        ritualContent.style.display = 'block';
+                        
+                        // Faire défiler jusqu'au contenu
+                        ritualContent.scrollIntoView({ behavior: 'smooth' });
+                    }, 1000);
+                } else {
+                    // Mot de passe incorrect
+                    messageDiv.textContent = "Mot de passe incorrect. Accès refusé.";
+                    messageDiv.classList.add('error');
+                    messageDiv.style.display = 'block';
+                    
+                    // Secouer l'input pour l'effet visuel
+                    passwordInput.style.animation = 'shake 0.5s';
+                    setTimeout(() => {
+                        passwordInput.style.animation = '';
+                    }, 500);
+                    
+                    // Vider le champ
+                    passwordInput.value = '';
+                    passwordInput.focus();
+                }
+            });
+            
+            // Permettre la soumission avec la touche Entrée
+            passwordInput.addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    submitButton.click();
+                }
+            });
+            
+            // Ajouter l'animation de secousse
+            const style = document.createElement('style');
+            style.textContent = `
+                @keyframes shake {
+                    0%, 100% { transform: translateX(0); }
+                    10%, 30%, 50%, 70%, 90% { transform: translateX(-5px); }
+                    20%, 40%, 60%, 80% { transform: translateX(5px); }
+                }
+            `;
+            document.head.appendChild(style);
+        });
+    </script>
+</body>
+</html>
