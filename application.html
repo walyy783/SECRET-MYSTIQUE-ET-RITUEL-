@@ -1,0 +1,1129 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SECRET MYSTIQUE ET RITUEL - Transformez Votre Vie Gratuitement</title>
+    <meta name="description" content="Accédez aux connaissances ancestrales : protection, prospérité, business, amour et réussite. 100% Gratuit sur Google Play.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome pour les icônes (espace réservé) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* --- VARIABLES & RESET --- */
+        :root {
+            --deep-blue: #0a0e27;
+            --dark-purple: #1a0b2e;
+            --royal-purple: #2d1b4e;
+            --gold: #d4af37;
+            --gold-light: #f5e6a3;
+            --gold-dark: #b8941f;
+            --text-light: #e8e8e8;
+            --text-white: #ffffff;
+            --text-muted: #a0a0b0;
+            --success-green: #2ecc71;
+            --gradient-gold: linear-gradient(135deg, #d4af37 0%, #f5e6a3 50%, #b8941f 100%);
+            --gradient-dark: linear-gradient(180deg, #0a0e27 0%, #1a0b2e 100%);
+            --shadow-gold: 0 0 30px rgba(212, 175, 55, 0.3);
+            --shadow-card: 0 10px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background: var(--gradient-dark);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Cinzel', serif;
+            color: var(--text-white);
+            line-height: 1.3;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        img {
+            max-width: 100%;
+        }
+
+        /* --- BOUTONS CTA --- */
+        .cta-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: var(--gradient-gold);
+            color: #1a0b2e;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 18px 40px;
+            border-radius: 50px;
+            border: none;
+            cursor: pointer;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+            position: relative;
+            overflow: hidden;
+            animation: pulse-gold 2s infinite;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px) scale(1.03);
+            box-shadow: 0 12px 35px rgba(212, 175, 55, 0.6);
+            color: #1a0b2e;
+        }
+
+        .cta-button i {
+            font-size: 1.3rem;
+        }
+
+        @keyframes pulse-gold {
+            0%, 100% { box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4); }
+            50% { box-shadow: 0 8px 40px rgba(212, 175, 55, 0.7); }
+        }
+
+        .cta-button.secondary {
+            background: transparent;
+            border: 2px solid var(--gold);
+            color: var(--gold);
+            animation: none;
+            box-shadow: none;
+        }
+
+        .cta-button.secondary:hover {
+            background: var(--gold);
+            color: #1a0b2e;
+            box-shadow: 0 8px 25px rgba(212, 175, 55, 0.5);
+        }
+
+        .free-badge {
+            display: inline-block;
+            background: var(--success-green);
+            color: #0a0e27;
+            font-weight: 700;
+            font-size: 0.85rem;
+            padding: 6px 18px;
+            border-radius: 30px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 20px;
+            animation: pulse-green 2s infinite;
+        }
+
+        @keyframes pulse-green {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        /* --- CONTAINER --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* --- HERO SECTION --- */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            position: relative;
+            padding: 100px 20px 80px;
+            background: radial-gradient(ellipse at 50% 0%, rgba(45, 27, 78, 0.8) 0%, transparent 60%),
+                        radial-gradient(ellipse at 80% 80%, rgba(212, 175, 55, 0.08) 0%, transparent 50%),
+                        var(--gradient-dark);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 20% 30%, rgba(212, 175, 55, 0.05) 0%, transparent 30%),
+                radial-gradient(circle at 80% 70%, rgba(212, 175, 55, 0.05) 0%, transparent 30%);
+            pointer-events: none;
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            max-width: 900px;
+        }
+
+        .hero-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 1.3rem;
+            color: var(--gold);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            opacity: 0.9;
+        }
+
+        .hero-logo i {
+            margin-right: 8px;
+        }
+
+        .hero h1 {
+            font-size: clamp(2.2rem, 5vw, 3.8rem);
+            margin-bottom: 25px;
+            font-weight: 700;
+            text-shadow: 0 2px 20px rgba(212, 175, 55, 0.2);
+        }
+
+        .hero h1 .gold-text {
+            color: var(--gold);
+            display: block;
+            font-size: clamp(1.8rem, 4vw, 3rem);
+            margin-top: 5px;
+        }
+
+        .hero p.subtitle {
+            font-size: clamp(1rem, 2vw, 1.3rem);
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto 35px;
+            line-height: 1.8;
+        }
+
+        .hero-cta-group {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .hero-cta-group .cta-button {
+            font-size: 1.2rem;
+            padding: 20px 50px;
+        }
+
+        .trust-indicators {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+
+        .trust-indicators span {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .trust-indicators i {
+            color: var(--gold);
+        }
+
+        /* --- SECTION PROBLÈME/SOLUTION --- */
+        .problem-solution {
+            padding: 100px 20px;
+            background: var(--deep-blue);
+            position: relative;
+        }
+
+        .problem-solution::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-gold);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            max-width: 650px;
+            margin: 0 auto 60px;
+            font-size: 1.05rem;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .problem-card {
+            background: rgba(45, 27, 78, 0.5);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 16px;
+            padding: 35px 25px;
+            text-align: center;
+            transition: all 0.3s ease;
+        }
+
+        .problem-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-5px);
+        }
+
+        .problem-card .icon {
+            font-size: 2.5rem;
+            color: #e74c3c;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .problem-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: var(--text-white);
+        }
+
+        .problem-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .solution-block {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px 30px;
+            background: linear-gradient(135deg, rgba(45, 27, 78, 0.8), rgba(26, 11, 46, 0.9));
+            border-radius: 20px;
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            box-shadow: var(--shadow-gold);
+        }
+
+        .solution-block .icon {
+            font-size: 3rem;
+            color: var(--gold);
+            margin-bottom: 20px;
+        }
+
+        .solution-block h3 {
+            font-size: 1.6rem;
+            margin-bottom: 15px;
+        }
+
+        .solution-block h3 .gold {
+            color: var(--gold);
+        }
+
+        .solution-block p {
+            color: var(--text-light);
+            font-size: 1.05rem;
+            line-height: 1.8;
+        }
+
+        /* --- BÉNÉFICES DÉTAILLÉS --- */
+        .benefits {
+            padding: 100px 20px;
+            background: linear-gradient(180deg, var(--dark-purple) 0%, var(--deep-blue) 100%);
+            position: relative;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 50px;
+        }
+
+        .benefit-card {
+            background: rgba(10, 14, 39, 0.7);
+            border: 1px solid rgba(212, 175, 55, 0.2);
+            border-radius: 20px;
+            padding: 40px 30px;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .benefit-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: var(--gradient-gold);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .benefit-card:hover {
+            border-color: rgba(212, 175, 55, 0.5);
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5), 0 0 30px rgba(212, 175, 55, 0.1);
+        }
+
+        .benefit-card:hover::before {
+            opacity: 1;
+        }
+
+        .benefit-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, rgba(212, 175, 55, 0.15), rgba(212, 175, 55, 0.05));
+            border: 1px solid rgba(212, 175, 55, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8rem;
+            color: var(--gold);
+            margin-bottom: 25px;
+        }
+
+        .benefit-card h3 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            font-weight: 700;
+            margin-bottom: 15px;
+            color: var(--gold-light);
+        }
+
+        .benefit-card p {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        .benefit-card .free-tag {
+            display: inline-block;
+            margin-top: 18px;
+            background: rgba(46, 204, 113, 0.15);
+            color: var(--success-green);
+            font-size: 0.8rem;
+            font-weight: 700;
+            padding: 5px 14px;
+            border-radius: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        /* --- CTA PRINCIPAL --- */
+        .main-cta {
+            padding: 100px 20px;
+            text-align: center;
+            background: radial-gradient(ellipse at 50% 50%, rgba(212, 175, 55, 0.1) 0%, transparent 70%),
+                        var(--dark-purple);
+            position: relative;
+        }
+
+        .main-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: var(--gradient-gold);
+        }
+
+        .main-cta h2 {
+            font-size: clamp(1.8rem, 3.5vw, 2.8rem);
+            margin-bottom: 20px;
+        }
+
+        .main-cta h2 .gold {
+            color: var(--gold);
+        }
+
+        .main-cta p {
+            color: var(--text-muted);
+            max-width: 600px;
+            margin: 0 auto 40px;
+            font-size: 1.1rem;
+        }
+
+        .main-cta .cta-button {
+            font-size: 1.3rem;
+            padding: 22px 60px;
+        }
+
+        .urgency-text {
+            margin-top: 25px;
+            color: var(--gold);
+            font-size: 0.95rem;
+            font-weight: 600;
+            animation: blink 1.5s infinite;
+        }
+
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        /* --- TÉMOIGNAGES --- */
+        .testimonials {
+            padding: 100px 20px;
+            background: var(--deep-blue);
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-card {
+            background: rgba(45, 27, 78, 0.4);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            border-radius: 20px;
+            padding: 35px 30px;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .testimonial-card:hover {
+            border-color: rgba(212, 175, 55, 0.4);
+            transform: translateY(-5px);
+        }
+
+        .testimonial-card .quote-icon {
+            font-size: 2rem;
+            color: var(--gold);
+            opacity: 0.4;
+            margin-bottom: 15px;
+        }
+
+        .testimonial-card .stars {
+            color: var(--gold);
+            margin-bottom: 15px;
+            font-size: 0.9rem;
+        }
+
+        .testimonial-card p {
+            color: var(--text-light);
+            font-style: italic;
+            line-height: 1.8;
+            margin-bottom: 20px;
+            font-size: 0.98rem;
+        }
+
+        .testimonial-author {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .testimonial-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: #1a0b2e;
+            font-size: 1.2rem;
+        }
+
+        .testimonial-author-info h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text-white);
+        }
+
+        .testimonial-author-info span {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* --- FOOTER --- */
+        footer {
+            background: #05071a;
+            padding: 60px 20px 30px;
+            border-top: 1px solid rgba(212, 175, 55, 0.15);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand h3 {
+            font-size: 1.3rem;
+            color: var(--gold);
+            margin-bottom: 15px;
+        }
+
+        .footer-brand p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            line-height: 1.7;
+        }
+
+        .footer-links h4 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: var(--text-white);
+        }
+
+        .footer-links ul {
+            list-style: none;
+        }
+
+        .footer-links ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links ul li a {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links ul li a:hover {
+            color: var(--gold);
+        }
+
+        .footer-cta {
+            text-align: center;
+        }
+
+        .footer-cta p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+
+        .footer-cta .cta-button {
+            font-size: 0.95rem;
+            padding: 15px 35px;
+        }
+
+        .footer-bottom {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+        }
+
+        .footer-bottom .disclaimer {
+            margin-top: 10px;
+            font-size: 0.78rem;
+            opacity: 0.6;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* --- STICKY MOBILE CTA --- */
+        .sticky-cta {
+            display: none;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 12px 20px;
+            background: rgba(10, 14, 39, 0.95);
+            backdrop-filter: blur(10px);
+            border-top: 1px solid rgba(212, 175, 55, 0.3);
+            z-index: 1000;
+            text-align: center;
+        }
+
+        .sticky-cta .cta-button {
+            width: 100%;
+            font-size: 1rem;
+            padding: 15px 20px;
+            animation: none;
+        }
+
+        /* --- RESPONSIVE --- */
+        @media (max-width: 768px) {
+            .hero {
+                padding: 80px 20px 60px;
+                min-height: auto;
+            }
+
+            .hero-cta-group .cta-button {
+                font-size: 1rem;
+                padding: 18px 35px;
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .trust-indicators {
+                gap: 15px;
+                font-size: 0.8rem;
+            }
+
+            .problem-solution,
+            .benefits,
+            .main-cta,
+            .testimonials {
+                padding: 70px 20px;
+            }
+
+            .solution-block {
+                padding: 35px 20px;
+            }
+
+            .main-cta .cta-button {
+                font-size: 1.05rem;
+                padding: 18px 35px;
+                width: 100%;
+                max-width: 350px;
+            }
+
+            .sticky-cta {
+                display: block;
+            }
+
+            body {
+                padding-bottom: 75px;
+            }
+
+            .footer-content {
+                grid-template-columns: 1fr;
+                text-align: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero h1 .gold-text {
+                font-size: 1.5rem;
+            }
+
+            .benefit-card {
+                padding: 30px 20px;
+            }
+
+            .testimonial-card {
+                padding: 25px 20px;
+            }
+        }
+
+        /* --- ANIMATIONS D'APPARITION --- */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ================= HERO SECTION ================= -->
+    <header class="hero">
+        <div class="hero-content">
+            <div class="hero-logo">
+                <i class="fas fa-moon"></i> SECRET MYSTIQUE ET RITUEL
+            </div>
+            
+            <span class="free-badge">
+                <i class="fas fa-gift"></i> 100% Gratuit
+            </span>
+
+            <h1>
+                Transformez Votre Vie avec les
+                <span class="gold-text">Secrets Ancestraux</span>
+            </h1>
+
+            <p class="subtitle">
+                Accédez à des connaissances spirituelles puissantes pour briser les blocages, 
+                attirer la chance, protéger votre famille et réussir dans tous vos projets. 
+                <strong style="color: var(--gold);">Tout est entièrement gratuit.</strong>
+            </p>
+
+            <div class="hero-cta-group">
+                <a href="https://play.google.com/store/apps/details?id=com.KRISSILATROU.OFICIEL" 
+                   class="cta-button" 
+                   target="_blank" 
+                   rel="noopener">
+                    <i class="fab fa-google-play"></i>
+                    TÉLÉCHARGER GRATUITEMENT
+                </a>
+                <span style="color: var(--text-muted); font-size: 0.85rem;">
+                    Disponible sur Google Play • Aucun paiement requis
+                </span>
+            </div>
+
+            <div class="trust-indicators">
+                <span><i class="fas fa-check-circle"></i> 100% Gratuit</span>
+                <span><i class="fas fa-shield-alt"></i> Protection Totale</span>
+                <span><i class="fas fa-star"></i> Résultats Prouvés</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- ================= PROBLÈME / SOLUTION ================= -->
+    <section class="problem-solution">
+        <div class="container">
+            <h2 class="section-title fade-in">Vous Reconnaissez-Vous ?</h2>
+            <p class="section-subtitle fade-in">
+                Ces situations vous semblent familières ? Vous n'êtes pas seul(e). 
+                Mais il existe une solution ancestrale.
+            </p>
+
+            <div class="problem-grid">
+                <div class="problem-card fade-in">
+                    <div class="icon"><i class="fas fa-cloud-rain"></i></div>
+                    <h3>La Poisse Persistante</h3>
+                    <p>Vous enchaînez les malchances, les portes se ferment, rien ne fonctionne malgré vos efforts.</p>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="icon"><i class="fas fa-lock"></i></div>
+                    <h3>Les Blocages Invisibles</h3>
+                    <p>Votre argent stagne, vos projets n'avancent pas, comme si une force invisible vous retenait.</p>
+                </div>
+                <div class="problem-card fade-in">
+                    <div class="icon"><i class="fas fa-user-slash"></i></div>
+                    <h3>Les Attaques Occultes</h3>
+                    <p>Sentiment d'être visé(e), fatigue inexpliquée, conflits répétés, mauvais œil...</p>
+                </div>
+            </div>
+
+            <div class="solution-block fade-in">
+                <div class="icon"><i class="fas fa-key"></i></div>
+                <h3>La Solution : <span class="gold">SECRET MYSTIQUE ET RITUEL</span></h3>
+                <p>
+                    Une application puissante qui vous donne accès aux <strong>connaissances ancestrales</strong> 
+                    et aux <strong>pratiques spirituelles</strong> pour transformer votre vie. 
+                    Des rituels simples, efficaces et <strong style="color: var(--success-green);">100% GRATUITS</strong> 
+                    pour résoudre vos blocages et attirer la chance.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= BÉNÉFICES DÉTAILLÉS ================= -->
+    <section class="benefits">
+        <div class="container">
+            <h2 class="section-title fade-in">Ce Que Vous Allez Découvrir</h2>
+            <p class="section-subtitle fade-in">
+                Des secrets ancestraux puissants pour chaque aspect de votre vie. 
+                <strong style="color: var(--success-green);">Tout est gratuit, sans exception.</strong>
+            </p>
+
+            <div class="benefits-grid">
+                <!-- Protection -->
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><i class="fas fa-shield-halved"></i></div>
+                    <h3>Protection Totale</h3>
+                    <p>
+                        Protégez-vous contre le mauvais œil, les attaques occultes et les pièges. 
+                        Rituels anti-frappe, anti-fusil et de bouclier spirituel pour vous et votre famille.
+                    </p>
+                    <span class="free-tag"><i class="fas fa-gift"></i> Gratuit</span>
+                </div>
+
+                <!-- Orpaillage -->
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><i class="fas fa-gem"></i></div>
+                    <h3>Orpaillage & Prospérité</h3>
+                    <p>
+                        Rituels puissants pour réussir dans l'extraction d'or, attirer l'abondance 
+                        financière et débloquer les rentrées d'argent.
+                    </p>
+                    <span class="free-tag"><i class="fas fa-gift"></i> Gratuit</span>
+                </div>
+
+                <!-- Business -->
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><i class="fas fa-store"></i></div>
+                    <h3>Business & Clientèle</h3>
+                    <p>
+                        Attirez une foule de clients fidèles, débloquez vos ventes, 
+                        réussissez vos affaires et faites prospérer votre commerce.
+                    </p>
+                    <span class="free-tag"><i class="fas fa-gift"></i> Gratuit</span>
+                </div>
+
+                <!-- Domptage & Séduction -->
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><i class="fas fa-heart"></i></div>
+                    <h3>Domptage & Séduction</h3>
+                    <p>
+                        Secrets pour captiver les cœurs (hommes et femmes), 
+                        vous faire respecter, aimer et désirer. Domptez les cœurs rebelles.
+                    </p>
+                    <span class="free-tag"><i class="fas fa-gift"></i> Gratuit</span>
+                </div>
+
+                <!-- Réussite Examens -->
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><i class="fas fa-graduation-cap"></i></div>
+                    <h3>Réussite (Examens/Concours)</h3>
+                    <p>
+                        Mettez toutes les chances de votre côté pour réussir haut la main 
+                        vos épreuves, examens et concours. Rituels de concentration et de succès.
+                    </p>
+                    <span class="free-tag"><i class="fas fa-gift"></i> Gratuit</span>
+                </div>
+
+                <!-- Désenvoûtement & Chance -->
+                <div class="benefit-card fade-in">
+                    <div class="benefit-icon"><i class="fas fa-sun"></i></div>
+                    <h3>Désenvoûtement & Chance</h3>
+                    <p>
+                        Éliminez la malchance, brisez les sorts, attirez la baraka 
+                        et ouvrez les portes de la réussite et de la chance durable.
+                    </p>
+                    <span class="free-tag"><i class="fas fa-gift"></i> Gratuit</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= APPEL À L'ACTION PRINCIPAL ================= -->
+    <section class="main-cta">
+        <div class="container">
+            <h2 class="fade-in">
+                Ne Laissez Plus la Malchance <span class="gold">Gouverner Votre Vie</span>
+            </h2>
+            <p class="fade-in">
+                Téléchargez maintenant <strong>SECRET MYSTIQUE ET RITUEL</strong> et accédez 
+                immédiatement à tous les rituels et secrets ancestraux. 
+                <strong style="color: var(--success-green);">C'est 100% gratuit, pour toujours.</strong>
+            </p>
+            <a href="https://play.google.com/store/apps/details?id=com.KRISSILATROU.OFICIEL" 
+               class="cta-button fade-in" 
+               target="_blank" 
+               rel="noopener">
+                <i class="fab fa-google-play"></i>
+                TÉLÉCHARGER GRATUITEMENT MAINTENANT
+            </a>
+            <p class="urgency-text fade-in">
+                <i class="fas fa-bolt"></i> Des milliers de personnes l'ont déjà téléchargé
+            </p>
+        </div>
+    </section>
+
+    <!-- ================= TÉMOIGNAGES ================= -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title fade-in">Ils Ont Vu Leur Vie Changer</h2>
+            <p class="section-subtitle fade-in">
+                Des personnes comme vous qui ont osé franchir le pas.
+            </p>
+
+            <div class="testimonials-grid">
+                <div class="testimonial-card fade-in">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                        "J'étais bloquée depuis des années. Mon commerce ne marchait plus, 
+                        les clients avaient disparu. J'ai suivi les rituels de business de l'application 
+                        et en 3 semaines, ma boutique a retrouvé une affluence incroyable. 
+                        Je recommande à tous !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">A</div>
+                        <div class="testimonial-author-info">
+                            <h4>Aminata K.</h4>
+                            <span>Commerçante</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                        "J'avais l'impression d'être poursuivi par la malchance. Des attaques, 
+                        des échecs à répétition. J'ai utilisé les rituels de protection et de 
+                        désenvoûtement. Aujourd'hui, je me sens libéré et protégé. Ma vie a 
+                        complètement changé. Merci !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">M</div>
+                        <div class="testimonial-author-info">
+                            <h4>Moussa D.</h4>
+                            <span>Entrepreneur</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="testimonial-card fade-in">
+                    <div class="quote-icon"><i class="fas fa-quote-left"></i></div>
+                    <div class="stars">
+                        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                    </div>
+                    <p>
+                        "Je préparais un concours difficile et j'avais peur d'échouer. 
+                        Les rituels de réussite m'ont donné confiance et concentration. 
+                        J'ai réussi avec mention ! Cette application est une bénédiction. 
+                        Et en plus, tout est gratuit !"
+                    </p>
+                    <div class="testimonial-author">
+                        <div class="testimonial-avatar">F</div>
+                        <div class="testimonial-author-info">
+                            <h4>Fatou S.</h4>
+                            <span>Étudiante</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h3><i class="fas fa-moon"></i> SECRET MYSTIQUE ET RITUEL</h3>
+                <p>
+                    Les connaissances ancestrales à portée de main. 
+                    Transformez votre vie, protégez votre famille et 
+                    attirez la réussite. 100% gratuit.
+                </p>
+            </div>
+
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#hero">Accueil</a></li>
+                    <li><a href="#benefits">Bénéfices</a></li>
+                    <li><a href="#testimonials">Témoignages</a></li>
+                    <li><a href="https://play.google.com/store/apps/details?id=com.KRISSILATROU.OFICIEL" target="_blank" rel="noopener">Télécharger</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h4>Informations</h4>
+                <ul>
+                    <li><a href="#">Politique de confidentialité</a></li>
+                    <li><a href="#">Conditions d'utilisation</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-cta">
+                <p>Prêt à changer votre vie ?</p>
+                <a href="https://play.google.com/store/apps/details?id=com.KRISSILATROU.OFICIEL" 
+                   class="cta-button" 
+                   target="_blank" 
+                   rel="noopener">
+                    <i class="fab fa-google-play"></i>
+                    TÉLÉCHARGER
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 SECRET MYSTIQUE ET RITUEL. Tous droits réservés.</p>
+            <p class="disclaimer">
+                Les résultats peuvent varier. Cette application propose des pratiques spirituelles 
+                à titre informatif et éducatif. Aucun résultat n'est garanti.
+            </p>
+        </div>
+    </footer>
+
+    <!-- ================= STICKY MOBILE CTA ================= -->
+    <div class="sticky-cta">
+        <a href="https://play.google.com/store/apps/details?id=com.KRISSILATROU.OFICIEL" 
+           class="cta-button" 
+           target="_blank" 
+           rel="noopener">
+            <i class="fab fa-google-play"></i>
+            TÉLÉCHARGER GRATUITEMENT
+        </a>
+    </div>
+
+    <!-- ================= JAVASCRIPT ================= -->
+    <script>
+        // Animation d'apparition au scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const fadeElements = document.querySelectorAll('.fade-in');
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            });
+
+            fadeElements.forEach(el => observer.observe(el));
+
+            // Smooth scroll pour les ancres
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+
+            // Suivi des clics sur les CTA (optionnel - analytics)
+            document.querySelectorAll('a[href*="play.google.com"]').forEach(btn => {
+                btn.addEventListener('click', function() {
+                    console.log('Clic sur le CTA de téléchargement');
+                    // Vous pouvez ajouter ici du tracking analytics si nécessaire
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>
